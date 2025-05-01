@@ -1,0 +1,73 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../image/bg1.jpg') no-repeat center center/cover;
+    height: 100vh;
+  }
+  
+  
+  /* Body padding top to avoid navbar overlap */
+  body {
+    padding-top: 80px; /* navbar အပေါ်မှာ တင်ထားတဲ့အတွက် body ကို အနည်းငယ်ရွှေ့ */
+  }
+  
+  
+  .navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 30px;
+    background-color: transparent;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  .form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .form-container input,
+  .form-container textarea,
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  .form-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .form-container button:hover {
+    background-color: #45a049;
+  }

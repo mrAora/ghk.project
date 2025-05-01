@@ -1,0 +1,124 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Grace Haw Kham Group</title>
+      <meta name="description" content="Professional Engineering and Construction Services by Gracehawkham Group.">
+      <meta name="keywords" content="Engineering, Construction, Building, Projects, Gracehawkham">
+      <meta name="author" content="Gracehawkham Group">
+      <link href="./style/reg.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+      <style>
+        body {
+          margin: 0;
+          font-family: sans-serif;
+        }
+    
+        /* Navigation bar */
+        .navbar {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          background-color: #333;
+          color: white;
+          padding: 10px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 1000;
+        }
+    
+        .navbar .logo {
+          font-size: 20px;
+          font-weight: bold;
+        }
+    
+        .navbar .nav-links {
+          display: flex;
+          gap: 20px;
+          justify-content:center;
+          flex:1;
+    
+    
+        }
+    
+        .navbar .nav-links a {
+          color: white;
+          text-decoration: none;
+        }
+    
+        .menu-icon {
+          display: none;
+          font-size: 26px;
+          cursor: pointer;
+        }
+    
+        /* Mobile styles */
+        @media (max-width: 768px) {
+          .navbar .nav-links {
+            display: none;
+            flex-direction: column;
+            background-color: #333;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            padding: 10px;
+            border-radius: 5px;
+          }
+    
+          .navbar .nav-links.active {
+            display: flex;
+          }
+    
+          .menu-icon {
+            display: block;
+          }
+        }
+    
+        /* Dummy content for scrolling */
+        .content {
+          margin-top: 70px;
+          padding: 20px;
+        }
+    
+        
+      </style>
+    <body>
+    
+     <!-- Navbar Start -->
+     
+     <nav class="navbar">
+       <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+       <div class="nav-links" id="navLinks">
+         <a href="./index.html"><i class="bi bi-house-fill"></i> Home</a>
+         <a href="./index.html#service"><i class="bi bi-bell-fill"></i>Services</a>
+         <a href="./index.html"><i class="bi bi-person-lines-fill"></i>Contact</a>
+       </div>
+     </nav>
+     <!-- Navbar End -->
+
+     
+  <form name="registerForm" method="POST" data-netlify="true" class="form-container">
+    <form id="registerForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="adress" placeholder="Adress" required>
+      <input type="text" name="message" placeholder="Message" required>
+      <button type="submit">Register</button>
+    </form>
+  </form>
+
+
+     
+
+  <script src="./style/reg.js"></script>
+  <script src="./email.js"></script>
+
+
+</body>
+</html>

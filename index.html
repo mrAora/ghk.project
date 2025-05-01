@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grace Haw Kham Group</title>
+  <meta name="description" content="Professional Engineering and Construction Services by Gracehawkham Group.">
+  <meta name="keywords" content="Engineering, Construction, Building, Projects, Gracehawkham">
+  <meta name="author" content="Gracehawkham Group">
+  <link href="./style/layout.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 20px;
+      justify-content:center;
+      flex:1;
+
+
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .navbar .nav-links.active {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+
+    /* Dummy content for scrolling */
+    .content {
+      margin-top: 70px;
+      padding: 20px;
+    }
+
+    
+  </style>
+<body>
+
+ <!-- Navbar Start -->
+ 
+ <nav class="navbar">
+  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#about"><i class="bi bi-house-fill"></i> Home</a>
+    <a href="#service"><i class="bi bi-bell-fill"></i>Services</a>
+    <a href="#contact"><i class="bi bi-person-lines-fill"></i>Contact</a>
+    <a href="./register.html" ><i class="bi bi-pen-fill"></i> Register</a>
+  </div>
+</nav>
+ <!-- Navbar End -->
+
+
+  <section class="hero-section"
+   id="hero">
+    <div class="hero-content">
+      <h1>Welcome To Grace Haw Kham</h1>
+      <p style="color: rgb(0, 255, 0); font-size:large ">Construction & Engineering</p>
+      <a href="#project" class="hero-btn">Explore Projects</a>
+    </div>
+  </section><!--end of hero-->
+
+  <section class="about-section"
+  id="about">
+    <div class="about-container"
+    id="about">
+      <h2 style="color: rgb(255, 248, 35);;">About Us</h2>
+      <p>Grace Haw Kham Construction And Engineering ကုမ္ပဏီ သည် မြန်မာနိုင်ငံရှိ အင်ဂျင်နီယာနှင့်
+        ဆောက်လုပ်ရေးလုပ်ငန်းအတွေ့အကြုံအနည်းဆုံး [နှစ်အရေအတွက်] နှစ်ရှိသော ယုံကြည်စိတ်ချရသောကုမ္ပဏီတစ်ခုဖြစ်ပါသည်။
+        ကျွန်ုပ်တိုသည် အဆောက်အဦများ၊ ကျောင်းများ၊ လမ်းပန်းဆက်သွယ်ရေးအလုပ်များ၊ စက်မှုဇုန်ဆောက်လုပ်ရေးများအပြင်
+        အသေးစားနှင့် အကြီးစား ပရောဂျက်မျိုးစုံကို တာဝန်ယူဆောင်ရွက်ပေးလျက်ရှိပါသည်။
+      </p>
+      <p>ကျွန်ုပ်တို၏ အဓိကရည်ရွယ်ချက်မှာ အရည်အသွေးမြင့်မားပြီး တိကျမြန်ဆန်သော ဝန်ဆောင်မှုများဖြင့် ဖောက်သည်တို၏
+        စိတ်ကျေနပ်မှုကိုဖြည့်ဆည်းရန်ဖြစ်ပါသည်။ အသုံးပြုသည့် နည်းပညာများ၊ စံချိန်စံညွှန်းများနှင့် အလုပ်အမှုဆောင်အဖွဲ၏
+        အတွေ့အကြုံနှင့်တကွ ယုံကြည်စိတ်ချရသောလုပ်ငန်းဖော်ပြုတ်တစ်ခုအဖြစ် ဆောင်ရွက်လျက်ရှိပါသည်။</p>
+    </div>
+  </section>
+
+
+  <!-- Services Section -->
+  <section class="services-section"
+  id="service">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>အိမ်ခြံမြေ ဆောက်လုပ်ရေး</h3>
+          <p>လုံးချင်းအိမ်၊ တိုက်ခန်း၊ စက်မှုဆောင် စတဲ့ အဆောက်အဦးအမျိုးမျိုးကို သတ်မှတ်ကာလအတွင်း၊ အရည်အသွေးမြင့်အတိုင်း
+            ဆောက်လုပ်ပေးပါသည်။</p>
+        </div>
+        <div class="service-card">
+          <h3>အင်ဂျင်နီယာ ဒီဇိုင်း</h3>
+          <p>အဆောက်အဦးအတွက် Structural, Electrical, Sanitary & Plumbing Designs များကို Professional Team မှ
+            တာဝန်ယူပေးသည်။</p>
+        </div>
+        <div class="service-card">
+          <h3>လမ်းပန်းဆက်သွယ်ရေး အလုပ်များ</h3>
+          <p>အဆင့်မြင့် စက်ယန္တရားနှင့် အတူ မြိုပြနှင့် အနယ်အသတ် လမ်းများ၊ ချိတ်ဆက်လမ်းများ တည်ဆောက်ခြင်း။</p>
+        </div>
+        <div class="service-card">
+          <h3>ပြုပြင်ထိန်းသိမ်းမှု</h3>
+          <p>အိမ်၊ ရုံး၊ စက်မှုဇုန်များအတွက် ပြုပြင်ထိန်းသိမ်းမှု ဝန်ဆောင်မှုများကို တာဝန်ယူဆောင်ရွက်သည်။</p>
+        </div>
+      </div>
+    </div>
+  </section><!--service section-->
+
+  <!-- Projects Section -->
+  <section class="project-section"
+  id="project">
+    <div class="container">
+      <h2 class="section-title">လုပ်ငန်းနမူနာများ</h2>
+
+      <div class="project-cards">
+
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <img src="./image/bd1.jpg" alt="Project 1">
+          <div class="card-content">
+            <h3>Building Design 1</h3>
+            <p class="short-text">
+              Te fewfwsfasdafcacfadadadadadadada
+              <span class="more-text"> Here is the remaining text that was hidden initially.</span>
+              <a href="#" class="read-more" onclick="toggleReadMore(this); return false;">Read More</a>
+            </p>
+          </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <img src="./image/bd2.jpg" alt="Project 2">
+            <div class="card-content">
+              <h3>Building Design 2</h3>
+              <p class="short-text">
+                Te fewfwsfasdafcacfadadadadadadada
+                <span class="more-text"> Here is the remaining text that was hidden initially.</span>
+                <a href="#" class="read-more" onclick="toggleReadMore(this); return false;">Read More</a>
+              </p>
+            </div>
+          </div>
+  
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <img src="./image/bd3.jpg" alt="Project 3">
+            <div class="card-content">
+              <h3>Building Design 3</h3>
+              <p class="short-text">
+                Te fewfwsfasdafcacfadadadadadadada
+                <span class="more-text"> Here is the remaining text that was hidden initially.</span>
+                <a href="#" class="read-more" onclick="toggleReadMore(this); return false;">Read More</a>
+              </p>
+            </div>
+          </div>
+  
+          <!-- Project Card 4 -->
+          <div class="project-card">
+            <img src="./image/bd4.jpg" alt="Project 4">
+            <div class="card-content">
+              <h3>Building Design 4</h3>
+              <p class="short-text">
+                Te fewfwsfasdafcacfadadadadadadada
+                <span class="more-text"> Here is the remaining text that was hidden initially.</span>
+                <a href="#" class="read-more" onclick="toggleReadMore(this); return false;">Read More</a>
+              </p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section><!--end of project card-->
+  
+   
+  
+    <section class="contact-section"
+    id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2 style="justify-content: center;">ဆက်သွယ်ရန်</h2>
+         
+          <ul>
+            <li><strong>လိပ်စာ:</strong> No.(Na-3/73),63 Road,Between 40 & 41 Street,Corner of Kankaw Street,Mahar Myaing(2),Mandalay.</li>
+            <li><strong>ဖုန်း:</strong>+95 9 445 105 823</li>
+            <li><strong>အီးမေးလ်:</strong> saizawmyintaye@gmail.com</li>
+          </ul>
+          <p style="color: blue;">Project မေးမြန်းလိုပါက အောက်ပါ form ဖြင့်ဆက်သွယ်နိုင်ပါသည်။</p>
+        </div>
+      </div>
+    </section>
+  
+   
+    <section class="faq-section">
+      <h2 style="color:rgb(255, 248, 35);">အမြဲမေးလေ့ရှိတဲ့ မေးခွန်းများ</h2>
+    
+      <div class="faq-item">
+        <input type="checkbox" id="faq1">
+        <label for="faq1">1. Project တစ်ခုစတင်ဖို့ ဘယ်လိုဆက်သွယ်ရမလဲ?</label>
+        <div class="faq-content">
+          <p>ကျွန်ုပ်တို့၏ Contact Form မှတဆင့် သို့မဟုတ် ဖုန်း/အီးမေးလ်ဖြင့်တိုက်ရိုက်ဆက်သွယ်နိုင်ပါသည်။</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <input type="checkbox" id="faq2">
+        <label for="faq2">2. Project ကြာမြင့်ချိန် ဘယ်လောက်ကြာနိုင်သလဲ?</label>
+        <div class="faq-content">
+          <p>Project ပမာဏအပေါ် မူတည်၍ ကြာမြင့်ချိန်ကွာခြားနိုင်ပါသည်။ Planning & Timeline ကို ဦးစွာပြသပေးပါသည်။</p>
+        </div>
+      </div>
+    
+      <div class="faq-item">
+        <input type="checkbox" id="faq3">
+        <label for="faq3">3. သင်တို့ဘယ်အထိနေရာတွေဆောင်ရွက်ပေးနိုင်သလဲ?</label>
+        <div class="faq-content">
+          <p>မြန်မာနိုင်ငံအနှံ့ ဆောက်လုပ်ရေးဆိုင်ရာ ဝန်ဆောင်မှုများကို ပေးနိုင်ပါသည်။</p>
+        </div>
+      </div>
+    </section><!--end of ask & ans-->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-info">
+            <h3>ဆက်သွယ်ရန်</h3>
+            <ul>
+              <li><strong>လိပ်စာ:</strong> No.(Na-3/73),63 Road,Between 40 & 41 Street,Corner of Kankaw Street,Mahar Myaing(2),Mandalay.</li>
+              <li><strong>ဖုန်း:</strong> +95 9 445 105 823</li>
+              <li><strong>အီးမေးလ်:</strong> maythusoe492@gmail.com</li>
+            </ul>
+          </div>
+      
+          <div class="footer-social">
+            <h3></h3>
+            <ul>
+              <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+              <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+              <li><a href="" target="_blank">Tiktok</a></li>
+              <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>Copyright © 2025 Grace Haw Kham Group. All Rights Reserved.</p>
+        </div>
+      </footer>
+    
+      <script src="./style/style.js"></script>
+    
+    </body>
+    </html>
+        
+    
+     
+    
+    </body>
+    
+    </html>
